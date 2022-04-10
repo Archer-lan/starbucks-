@@ -1,0 +1,25 @@
+/* pages/login/login.wxss */
+/* pages/register/register.wxss */
+.formItem{
+    display: flex;
+    align-items:baseline;
+}
+
+.formItem input{
+  border: 1rpx solid #999;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 15rpx;
+  margin-top: 40rpx;
+}
+.wapper{
+    padding: 0 20rpx;
+    margin-top: 40rpx;
+}
+
+.btn{
+    background-color: rgb(77, 204, 204);
+    font-weight: bold;
+    color: black;
+    margin-top: 40rpx;
+}

@@ -1,0 +1,55 @@
+{
+	"pages": [
+		"pages/start/start",
+   		"pages/index/index",
+    	"pages/vip/vip",
+   		"pages/orders/orders",
+    	"pages/my/my",
+		"pages/order/order",
+		"pages/map/map",
+		"pages/productDetail/productDetail",
+		"pages/mycoupon/mycoupon",
+		"pages/register/register",
+		"pages/login/login"
+	],
+	"tabBar": {
+		"list": [
+		  {
+		  "pagePath": "pages/index/index",
+		  "text": "首页",
+		  "iconPath": "/img/star.jpg",
+		  "selectedIconPath": "/img/star_hot.jpg"
+		},
+		{
+		  "pagePath": "pages/vip/vip",
+		  "text": "星享俱乐部",
+		  "iconPath": "/img/vip.jpg",
+		  "selectedIconPath": "/img/vip_hot.jpg"
+		},
+		{
+		  "pagePath": "pages/orders/orders",
+		  "text": "订单",
+		  "iconPath": "/img/order.jpg",
+		  "selectedIconPath": "/img/order_hot.jpg"
+		},
+		{
+		  "pagePath": "pages/my/my",
+		  "text": "我的",
+		  "iconPath": "/img/my.jpg",
+		  "selectedIconPath": "/img/my_hot.jpg"
+		}
+	  ]
+	  },
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置展示"
+		}
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "starbucks",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json"
+}

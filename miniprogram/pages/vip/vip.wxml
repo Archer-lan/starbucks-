@@ -1,0 +1,39 @@
+<!--pages/vip/vip.wxml-->
+<swiper autoplay="{{false}}" interval="{{5000}}" duration="{{500}}" class="swiper1" bindchange="swiperchange">
+          <block wx:for="{{memberlevel}}" wx:key="*this">
+            <swiper-item>
+              <image src="{{item.imageurl}}"></image>
+              <view class="star1" style="color: {{color[(item.id-7)]}};">
+              再积4<image src="{{memberlittle[(item.id-7)].imageurl}}"></image>可升级获取好礼
+              </view>
+              <view class="text2" style="color: {{color[(item.id-7)]}};">{{item.imagetitle}}</view>
+
+              <scroll-view scroll-y="true" style="height:900rpx" >
+                <view class="function">
+                <view class="vipf">会员权益</view>
+                <view wx:for="{{vipfunc}}" wx:key="*this" class="vip">
+                  <image src="{{item.imageurl}}"></image>
+                  <view>{{item.imagetitle}}</view>
+                </view>
+                <view class="vipf">积分规则</view>
+                <view class="rule">
+                  <view class="cont">
+                    <image src="{{memberrule[0].imageurl}}">啡快</image>
+                    <!-- <view class="rule-title1">啡快</view>
+                    <view class="rule-title2">在线点 到店取</view>
+                    <view class="price1">消费</view>
+                    <view class="price2">50</view> -->
+                    <!-- <button>立即点单</button> -->
+                  </view>
+                  <view>
+                    <image src="{{memberrule[1].imageurl}}"></image>
+                  </view>
+                  <view>
+                    <image src="{{memberrule[2].imageurl}}"></image>
+                  </view>
+                </view>
+                </view>
+              </scroll-view>
+            </swiper-item>
+          </block>
+</swiper>

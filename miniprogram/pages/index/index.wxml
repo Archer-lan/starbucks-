@@ -1,0 +1,42 @@
+<!--pages/index/index.wxml-->
+<scroll-view scroll-y="true" style="height: 100%;"  bindscrolltolower="lower">
+<swiper indicator-dots="{{true}}" indicator-color="rgb(245,245,245)" indicator-active-color="white"
+          autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" class="swiper1">
+          <block wx:for="{{bannermpData}}" wx:key="*this">
+            <swiper-item>
+              <image src="{{item.imageurl}}"></image>
+            </swiper-item>
+          </block>
+</swiper>
+<view class="cont">
+    <view class="head">
+        <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+        <view>
+            <view class="star1">
+              0/4
+              <image src="{{memberlittle[0].imageurl}}"></image>
+            </view>
+            <view class="star2">
+              再积4<image src="{{memberlittle[0].imageurl}}"></image>
+              可升级获取好礼
+            </view>
+            <view class="line2"></view>
+        </view>
+        <view class="button" bindtap="Tomycoupon">1张好礼券</view>
+        <!-- <button>一张好礼券</button> -->
+    </view>
+    <view class="func">
+        <image src="{{bannertabs[0].imageurl}}" bindtap="ToOrder"></image>
+        <view class="line"></view>
+        <image src="{{bannertabs[1].imageurl}}" bindtap="ToOrder"></image>
+    </view>
+    <swiper indicator-dots="{{true}}" indicator-color="rgb(245,245,245)" indicator-active-color="white"
+          autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" class="swiper2">
+          <block wx:for="{{bannerbottomData}}" wx:key="*this">
+            <swiper-item>
+              <image src="{{item.imageurl}}"></image>
+            </swiper-item>
+          </block>
+    </swiper>
+</view>
+</scroll-view>

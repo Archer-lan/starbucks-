@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container1">
+        <image class="image1" src="https://artwork.starbucks.com.cn/srkitshelves/main_1b466635-a618-45dc-840e-585628686d07.png"></image>
+        <image class="image2" src="https://artwork.starbucks.com.cn/newSVCArtworks/main_d08ebe85-10b8-4ecc-8219-b3081c2c6a36.png"></image>
+        <view class="container2">
+          <text class="text1">全新经典电子会员星礼包</text>
+          <view class="container3">
+            <text class="text2">快捷升级</text>
+            <text class="text2" decode="{{true}}"> 超值新品</text>
+            <text class="text3" decode="{{true}}"> 最高优惠价值267元</text>
+          </view>
+          <view class="container4">
+            ¥98
+          </view>
+        </view>
+    </view>

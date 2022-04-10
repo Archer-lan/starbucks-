@@ -1,0 +1,70 @@
+<view class="wrap" wx:if="{{userInfo}}" >
+  <image class="facePicture" src="{{userInfo.avatarUrl}}"></image>
+  <view class="nickName">{{userInfo.nickName}}</view>
+  <view class="botton" bindtap="ToLogin" style="visibility: {{buttonvisibility[visnum]}};">登陆</view>
+  <view class="botton" bindtap="ToRegister" style="visibility: {{buttonvisibility[visnum]}};">/注册</view>
+</view>
+<view class="cards">
+  <view class="box">
+  <!-- 左边 -->
+    <view class="box-children" >
+      <image class="box-children-img" src= "/img/recommand1.png" bindtap="Tomycoupon"></image>
+      <view class="box-children-discripe" bindtap="Tomycoupon">我的好礼券</view>
+    </view>
+    <!-- 右边 -->
+    <view class="box-children">
+      <image class="box-children-img" src= "/img/recommand2.png"></image>
+      <view class="box-children-discripe">我的星礼卡</view>
+    </view>
+  </view>
+</view>
+
+<view class="my-startbark">
+ <view class="my-startbark-box">
+    <view class="my-startbark-title">
+      <text class="text">我的星巴克</text>
+    </view>
+    <view class="my-startbark-content">
+      <view class="my-startbark-detail">
+        <image class="my-startbark-img" src="{{minestarbuck[0].imageurl}}"></image>
+        <text class="my-startbark-detail-text">奖品</text>
+      </view>
+      <view class="my-startbark-detail">
+        <image class="my-startbark-img" src="{{minestarbuck[1].imageurl}}"></image>
+        <text class="my-startbark-detail-text">星咖号</text>
+      </view>
+      <view class="my-startbark-detail">
+        <image class="my-startbark-img" src="{{minestarbuck[2].imageurl}}"></image>
+        <text class="my-startbark-detail-text">礼物</text>
+      </view>
+    </view>
+ </view>
+</view>
+
+<view class="normal">
+  <view class="normal-content">
+    <view class="normal-title item">
+      常用功能
+    </view>
+    <view class="item">
+        <view><image class="item-content-img" src="{{minefunction[0].imageurl}}"></image></view>
+        <view class="item-content-text">地址管理</view>
+    </view>
+    <view class="item">
+        <view><image class="item-content-img" src="{{minefunction[1].imageurl}}"></image></view>
+        <view class="item-content-text">发票管理</view>
+    </view>
+    <view class="item">
+        <view><image class="item-content-img" src="{{minefunction[2].imageurl}}"></image></view>
+        <view class="item-content-text">官方网址</view>
+    </view>
+    <view class="item">
+        <view><image class="item-content-img" src="{{minefunction[3].imageurl}}"></image></view>
+        <view class="item-content-text">在线客服</view>
+    </view>
+    <view class="item">
+        <view><image class="item-content-img" src="{{minefunction[4].imageurl}}"></image></view>
+        <view class="item-content-text">证件条款</view>
+    </view>
+  </view>
+</view>

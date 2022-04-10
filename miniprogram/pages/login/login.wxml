@@ -1,0 +1,17 @@
+<!--登录页面-->
+<view class="wapper">
+  <form catchsubmit="formSubmit">
+    <view class="formItem">
+      <text>手机号：</text>
+      <input type="text" name="phone" placeholder="请输入手机号"/>
+    </view>
+    <view class="formItem">
+      <text space="ensp" decode="{{true}}">密&nbsp;&nbsp;&nbsp;码：</text>
+      <input type="password" name="password" placeholder="请输入密码"/>
+    </view>
+    <view class="formItem">
+      <button style="width: 80%;" class="btn" formType="submit">立即登录</button>
+    </view>
+  </form>  
+</view>
+

@@ -1,0 +1,26 @@
+<button class="mainbtn" bindtap="tomap">{{locationData}}</button>
+
+
+<view class="content">
+    <scroll-view class="content-left" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" style="height:calc(100vh)">
+        <view class="list-bar">
+            <!-- <view class="list-bar-item" id="{{num==index?'cur':''}}" bindtap="switch_tap">星级套餐</view> -->
+            <view wx:for="{{classifications}}" wx:key="*this" data-id="{{item.id}}" id="{{num==index?'cur':''}}" bindtap="switch_tap" >
+                <view class="list-bar-item" >{{item.typename}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <scroll-view class="content-right" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" style="height:calc(100vh)">
+        <view wx:for="{{productsInfos}}" wx:key="*this" bindtap="list_item_detail" data-id="{{item.id}}">
+        <view class="list-item">
+            <view class="list-item-left">
+                <image src="{{item.imageurl}}"></image>
+            </view>
+            <view class="list-item-right">
+                <view class="list-item-name">{{item.title}}</view>
+                <view class="list-item-price">{{item.price}}</view>
+            </view>
+        </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,102 @@
+/* pages/vip/vip.wxss */
+page{
+    height: 100%;
+}
+.swiper1{
+    height:100%;
+}
+.swiper1 image{
+    width: 90%;
+    height: 27%;
+    margin-left: 5%;
+    margin-bottom: 20rpx;
+}
+.star1{
+    position: absolute;
+    top: 120rpx;
+    left: 80rpx;
+}
+.star1 image{
+    margin: 1rpx 1rpx 0rpx 0rpx;
+    height: 30rpx;
+    width: 30rpx;
+}
+.text2{
+    position: absolute;
+    top: 50rpx;
+    left: 80rpx;
+    font-size: 50rpx;
+}
+.vipf{
+    height: 100rpx;
+    font-size: 40rpx;
+    margin-top: 20rpx;
+    margin-left: 5%;
+}
+.vip{
+    display: flex;
+    width: 90%;
+    height: 250rpx;
+    margin-left: 5%;
+    margin-bottom: 20rpx;
+    border-radius: 20rpx;
+    background-color: rgb(249, 249, 249);
+}
+.vip image{
+    margin-top: 10rpx;
+    height: 220rpx;
+    width: 300rpx;
+}
+.vip view{
+    width: 270rpx;
+    overflow:auto;
+    text-overflow: ellipsis;
+    font-size: 32rpx;
+    color:rgb(81, 200, 151) ;
+    margin-top: 90rpx;
+    margin-left: 40rpx;
+}
+.rule{
+    height: 480rpx;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 20rpx;
+}
+.rule image{
+    margin-top: 30rpx;
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 39rpx;
+}
+/* .rule-title1{
+    position:absolute;
+    top: 30rpx;
+    left: 100rpx;
+    font-size: 39rpx;
+}
+.rule-title2{
+    font-size: 30rpx;
+    padding-top: 80rpx;
+    padding-left: 40rpx;
+}
+.price1{
+    font-size: 30rpx;
+
+}*/
+.cont{
+    display: flex;
+}
+.cont button{
+    margin-top: 60rpx;
+    margin-left: 30rpx;
+    height: 70rpx;
+    width: 10%;
+    border-radius: 60rpx;
+    overflow: visible;
+    background-color: white;
+    color: black;
+    font-size: 26rpx;
+    text-align: center;
+    line-height: 50rpx;
+}

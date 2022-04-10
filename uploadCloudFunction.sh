@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-0g7snttj4951a578 --n lbs_server --r --project "/Users/hkn/Desktop/program" --report_first --report

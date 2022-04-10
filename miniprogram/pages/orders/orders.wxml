@@ -1,0 +1,185 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">未完成</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已完成</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item>
+    <scroll-view scroll-y="true" style="height: 100%;"  bindscrolltolower="lower" wx:for="orderData" wx:key="*this">
+    <view class="single">
+        <view class="title">
+            <view class="title-left">星巴克</view>
+            <view class="title-right">
+                <view class="title-right-status">{{item.state}}</view>
+                <view class="title-right-date">{{item.makedate}}</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content-item">
+                <view class="pic">
+                    <image src="{{item.products.imageurl}}"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">{{item.products.title}}</view>
+                    <view class="info-status">{{item.size}}{{item.temperature}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bt-left">
+                <view class="price">{{item.price}}</view>
+            </view>
+            <view class="bt-right">
+                <button>去开票</button>
+                <button>再来一单</button>
+            </view>
+        </view>
+    </view>
+    </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: 100%;"  bindscrolltolower="lower">
+    <view class="single">
+        <view class="title">
+            <view class="title-left">星巴克</view>
+            <view class="title-right">
+                <view class="title-right-status">已完成</view>
+                <view class="title-right-date">2022-4-7 19:02:00</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bt-left">
+                <view class="price">¥100</view>
+            </view>
+            <view class="bt-right">
+                <button>去开票</button>
+                <button>再来一单</button>
+            </view>
+        </view>
+    </view>
+    <view class="single">
+        <view class="title">
+            <view class="title-left">星巴克</view>
+            <view class="title-right">
+                <view class="title-right-status">已完成</view>
+                <view class="title-right-date">2022-4-7 19:02:00</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bt-left">
+                <view class="price">¥100</view>
+            </view>
+            <view class="bt-right">
+                <button>去开票</button>
+                <button>再来一单</button>
+            </view>
+        </view>
+    </view>
+    <view class="single">
+        <view class="title">
+            <view class="title-left">星巴克</view>
+            <view class="title-right">
+                <view class="title-right-status">已完成</view>
+                <view class="title-right-date">2022-4-7 19:02:00</view>
+            </view>
+        </view>
+        <view class="content">
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+            <view class="content-item">
+                <view class="pic">
+                    <image src="../../asset/pic1.jpeg"></image>
+                </view>
+                <view class="info">
+                    <view class="info-name">金芒封泥茶韵乌龙</view>
+                    <view class="info-status">超大杯冰</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bt-left">
+                <view class="price">¥100</view>
+            </view>
+            <view class="bt-right">
+                <button>去开票</button>
+                <button>再来一单</button>
+            </view>
+        </view>
+    </view>
+    </scroll-view>
+    </swiper-item>
+</swiper>
